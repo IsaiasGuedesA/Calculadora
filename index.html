@@ -2,25 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assent/favicon.png">
   
-  <title>Frontend Mentor | Calculator app</title>
+  <title>Calculadora - Isaias Araujo</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
+  <link rel="stylesheet" href="./scr/style.css">
 </head>
 <body>
+  <main>
+    <header>
+      <h2> calc</h2>
+      <div class="theme">
+        <h3>THEME</h3>
+        <section>
+          <span>
+            <h4>1</h4>
+            <h4>2</h4>
+            <h4>3</h4>
+          </span>
+          <div class="Switch" id="Switch">
+            <!-- botao tema -->
+            <div class="s1" id="s1"></div>
+            <div class="s2" id="s2"></div>
+            <div class="s3" id="s3"></div>
+            <div class="ball" id="ball"></div> 
+          </div> 
+        </section>
+      </div>
+    </header>
+    <section class="display">
+      <h1>
+        
+      </h1>
+    </section>
+    <section class="keypad">
+      <div class="bts" id="sete"><h6>7</h6></div>
+      <div class="bts" id="oito"><h6>8</h6></div>
+      <div class="bts" id="nove"><h6>9</h6></div>
+      <div class="del" id="del"><h6>DEL</h6></div>
+      <div class="bts" id="quatro"><h6>4</h6></div>
+      <div class="bts" id="cinco"><h6>5</h6></div>
+      <div class="bts" id="seis"><h6>6</h6></div>
+      <div class="bts" id="mais"><h6>+</h6></div>
+      <div class="bts" id="um"><h6>1</h6></div>
+      <div class="bts" id="dois"><h6>2</h6></div>
+      <div class="bts" id="tres"><h6>3</h6></div>
+      <div class="bts" id="menos"><h6>-</h6></div>
+      <div class="bts" id="ponto"><h6>.</h6></div>
+      <div class="bts" id="zero"><h6>0</h6></div>
+      <div class="bts" id="divisao"><h6>/</h6></div>
+      <div class="bts" id="vezes"><h6>x</h6></div>
+      <div class="reset" id="reset"><h6>RESET</h6></div>
+      <div class="igual" id="igual"><h6>=</h6></div>
+    </section>
+  </main>
+
 
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <h6 id="copy" style="font-size: 13px;"> &copy; 2024 create by Isaias Araujo</h6>
+  </footer>
+
 </body>
+<script src="/scr/thema.js"></script>
+<script src="/scr/script.js"></script>
 </html>

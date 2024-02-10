@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+  
+}
+main{
+
+    width: max(440px,30vw);
+    margin: 20px;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .theme{
+    display: flex;
+    flex-direction: row;
+}
+
+header .theme section{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 55px;
+    
+}
+header .theme section span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+}
+header .theme section .Switch{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    position: relative;
+    cursor: pointer;
+}
+header .theme section .Switch .s1,.s2,.s3{
+    background-color: hsl(223, 31%, 20%);
+    width: 33.33%;
+}
+header{
+    color: hsl(0, 0%, 100%);
+
+}
+header h4, header h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+header h3{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 20px;
+    
+
+}
+header h3, h4{
+    font-size: 12px;
+}
+
+.Switch .s1{
+    border-radius: 50px 0px 0px 50px;
+
+}
+
+.Switch .s3{
+    border-radius: 0px 50px 50px 0px;
+    
+}
+
+.Switch .ball{
+    background-color: hsl(6, 63%, 50%) ; 
+    border-radius: 50px;
+    height: 15px !important;
+    width: 15px !important;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+   
+    transform: translateY(-50%);
+    transition: left 0.5s;
+    
+}
+
+
+.display{
+    background-color: hsl(224, 36%, 15%);
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 10px;
+    overflow-x: hidden;
+
+}
+.display h1{
+    margin-right: 20px;
+    font-size: 40px;
+    color: hsl(0, 0%, 100%);
+}
+
+main .keypad{
+    margin-top: 20px;
+    background-color: hsl(223, 31%, 20%);
+    display: grid;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.keypad .bts {
+    background-color: hsl(30, 25%, 89%);
+    border-bottom: solid 4px hsl(28, 16%, 65%);
+    
+}
+.keypad div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 65%;
+    width: 85%;
+    border-radius: 10px;
+    
+    
+}
+.keypad h6{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: hsl(221, 14%, 31%);
+   
+}
+
+
+
+.keypad .reset{
+    width: 90% !important;
+    grid-row: 5;
+    grid-column: 1 /span 2;
+}
+.keypad .igual{
+    width: 90% !important;
+    grid-row: 5;
+    grid-column: 3 /span 2;
+}
+.keypad .reset h6, .del h6{
+    font-size: 25px !important;
+    color: hsl(0, 0%, 100%) ;
+}
+.igual h6{
+    font-size: 25px !important;
+    color: hsl(0, 0%, 100%) ;
+
+}
+
+.keypad .reset , .del {
+
+    background-color: hsl(225, 21%, 49%);
+    border-bottom: solid 4px hsl(224, 28%, 35%);
+    
+
+}
+.keypad .igual{
+
+    background-color: hsl(6, 63%, 50%) ;
+    border-bottom: solid 4px hsl(6, 70%, 34%) ;
+    
+}
+
+.keypad div:active{
+    border: 0 !important;
+}
